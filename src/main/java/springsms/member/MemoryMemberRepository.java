@@ -3,13 +3,14 @@ package springsms.member;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MemoryMemberRepository implements MemberRepository {
+public class  MemoryMemberRepository implements MemberRepository {
 
-    private Map<Long, Member> store = new HashMap<>();
+    private  Map<Long, Member> store = new HashMap<>();
 
     @Override
-    public void save(Long id, Member member) {
+    public void save(Member member) {
         store.put(member.getId(), member);
+
     }
 
     @Override

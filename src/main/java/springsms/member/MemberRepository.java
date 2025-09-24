@@ -1,6 +1,6 @@
 package springsms.member;
 
 public interface MemberRepository {
-    void save(Long id, Member member);
+    void save(Member member);
     Member findById(Long memberId);
 }
