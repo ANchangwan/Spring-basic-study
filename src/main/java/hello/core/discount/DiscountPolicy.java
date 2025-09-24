@@ -1,6 +1,6 @@
-package springsms.discount;
+package hello.core.discount;
 
-import springsms.member.Member;
+import hello.core.member.Member;
 
 public interface DiscountPolicy {
     /**

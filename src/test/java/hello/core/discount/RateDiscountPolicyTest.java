@@ -1,10 +1,10 @@
-package springsms.discount;
+package hello.core.discount;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import springsms.member.Grade;
-import springsms.member.Member;
+import hello.core.member.Grade;
+import hello.core.member.Member;
 
 public class RateDiscountPolicyTest {
     RateDiscountPolicy rateDiscountPolicy = new RateDiscountPolicy();

@@ -1,4 +1,4 @@
-package springsms.core;
+package hello.core.core;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

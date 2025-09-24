@@ -1,12 +1,14 @@
-package springsms.core;
+package hello.core;
 
-import springsms.member.Grade;
-import springsms.member.Member;
-import springsms.member.MemberServiceImpl;
+import hello.core.member.Grade;
+import hello.core.member.Member;
+import hello.core.member.MemberServiceImpl;
 
 public class MemberApp {
     public static void main(String[] args) {
-        MemberServiceImpl memberService = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+
+        MemberServiceImpl memberService = (MemberServiceImpl) appConfig.memberService();
         Member member = new Member(1L, "MemberA", Grade.VIP);
         memberService.join(member);
 

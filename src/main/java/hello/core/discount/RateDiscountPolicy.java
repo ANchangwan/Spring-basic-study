@@ -1,7 +1,7 @@
-package springsms.discount;
+package hello.core.discount;
 
-import springsms.member.Grade;
-import springsms.member.Member;
+import hello.core.member.Grade;
+import hello.core.member.Member;
 
 public class RateDiscountPolicy  implements DiscountPolicy {
     private int discountRate = 10;

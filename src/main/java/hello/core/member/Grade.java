@@ -1,4 +1,4 @@
-package springsms.member;
+package hello.core.member;
 
 public enum Grade {
     Basic,
