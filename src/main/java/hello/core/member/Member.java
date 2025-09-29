@@ -1,9 +1,12 @@
 package hello.core.member;
 
+import org.springframework.stereotype.Component;
+
 public class Member {
     private Long id;
     private String name;
     private Grade grade;
+
 
     public Member(Long id, String name, Grade grade) {
         this.id = id;

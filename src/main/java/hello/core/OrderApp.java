@@ -3,10 +3,8 @@ package hello.core;
 import hello.core.member.Grade;
 import hello.core.member.Member;
 import hello.core.member.MemberService;
-import hello.core.member.MemberServiceImpl;
 import hello.core.order.Order;
 import hello.core.order.OrderService;
-import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class OrderApp {
@@ -15,9 +13,9 @@ public class OrderApp {
 //        MemberService memberService = appConfig.memberService();
 //        OrderServiceImpl orderService = (OrderServiceImpl) appConfig.orderService();
 
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AutoAppConfig.class);
         OrderService orderService = context.getBean("orderService", OrderService.class);
-        MemberService memberService = context.getBean("memberService", MemberService.class);
+        MemberService memberService = context.getBean("memberService",MemberService.class);
 
         Long memberId = 1L;
         Member member = new Member(memberId, "memberA", Grade.VIP);
