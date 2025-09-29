@@ -14,12 +14,10 @@ public class BeanLifeCycleTest{
         context.close();
     }
 
-
-
     @Configuration
     static class Config {
         // destroyMethod close 명시하지 않아도 close 찾아서 작동
-        @Bean(initMethod = "init", destroyMethod = "close")
+        @Bean
         public NetworkClient networkClient() {
             NetworkClient networkClient = new NetworkClient();
             networkClient.setUrl("http://127.0.0.1:8080");
